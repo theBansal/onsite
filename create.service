@@ -1,0 +1,11 @@
+[Unit]
+Description = Nothing
+After = network.target
+
+[Service]
+ExecStart = /usr/local/bin/my.bash
+Restart=always
+RestartSec=30s
+[Install] 
+WantedBy = multi-user.target
+
